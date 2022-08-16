@@ -1,0 +1,43 @@
+mixin Showcase
+   
+  +Section('container-fluid').py-0.overflow-hidden.bg-white(data-zanim-timeline!={delay: 0.4} data-zanim-trigger="scroll")
+    .devices-wrapper
+     
+      .ipad--l-1(data-zanim-xs!={delay: 0.5, animation: "slide-left", duration: 1.5})
+        img.device(data-parallax data-rellax-speed=3.8, src=`${CWD}assets/img/showcase/collage-2.jpg`, alt='')
+      .iphone-1(data-zanim-xs!={delay: 0.4, animation: "slide-left", duration: 1.5})
+        img.device(data-parallax data-rellax-speed=4.8, src=`${CWD}assets/img/showcase/little-paris-m.jpg`, alt='')
+        .iphone-1(data-zanim-xs!={delay: 0.4, animation: "slide-left", duration: 1.5})
+        img.device(data-parallax data-rellax-speed=4.8, src=`${CWD}assets/img/showcase/puppies-1.jpg`, alt='')
+        .iphone-1(data-zanim-xs!={delay: 0.4, animation: "slide-left", duration: 1.5})
+        img.device(data-parallax data-rellax-speed=4.8, src=`${CWD}assets/img/showcase/puppies-2.jpg`, alt='')
+      .ipad--l-2(data-zanim-xs!={delay: 0.3, animation: "slide-left", duration: 1.5})
+        img.device(data-parallax data-rellax-speed=3.4, src=`${CWD}assets/img/showcase/collage-1.jpg`, alt='')
+      
+    .row.py-8.min-vh-100.align-items-center
+      .col-md-auto.px-md-4.ps-md-8
+        h1.display-4.fs-2.fs-sm-4.fs-md-5
+          span.overflow-hidden.d-inline-block
+            span.d-inline-block(data-zanim-xs!={delay: 1}) pittie 
+              span.font-base.fst-italic.fw-normal City
+          br
+          span.overflow-hidden.d-inline-block.pb-2
+            span.d-inline-block(data-zanim-xs!={delay: 1.1})
+        .overflow-hidden
+          p.mt-3.mt-sm-4.font-sans-serif.lead(data-zanim-xs!={delay: 1.2}) American Pitbull puppies bred with love and looking for their furever homes
+        .mt-3.mt-sm-5
+          a(href='#demoes' data-offset=60 data-zanim-xs!={delay: 1.3}).btn.btn-dark.btn-sm.me-2.my-2 Meet the parents
+
+  +Section.font-sans-serif.text-center.py-6.py-xl-9.bg-dark
+    .row.justify-content-center
+      .col-xl-9.col-lg-10
+        .fs-2.text-500 These dogs are our pets, 
+          h3.d-inline-block.fw-bold.text-white we feed them the highest quality food and treats
+          |  — These babies have been shown love, the excellent training and behavior of their parents, and have been provided vetrinary care from conception until you take they become a member of your family.
+        hr.hr-short.bg-500.mt-6.opacity-1
+
+  
+
+
+  
+    
