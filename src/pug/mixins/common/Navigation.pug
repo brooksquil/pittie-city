@@ -9,7 +9,7 @@ mixin Navigation
   nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.navbar-sparrow
     .container
       a.navbar-brand(href=`${CWD}index.html`)
-        img(src=`${CWD}assets/img/logo-sparrow-digital.png` alt='sparrow' height=35)
+        img(src=`${CWD}assets/img/white-pug.png` alt='sparrow' height=35)
       button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNavDropdown1', aria-controls='navbarNavDropdown1', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #navbarNavDropdown1.collapse.navbar-collapse
@@ -22,10 +22,5 @@ mixin Navigation
                 li
                   +NavLinkBs(item, 'homes/')      
 
-          li.nav-item
-            a.nav-link(href='#digitalFeatures1') Services
-          li.nav-item
-            a.nav-link(href=`${CWD}components/sparrow/accordion.html`) Components       
-          li.nav-item
-            a.nav-link(href=`${CWD}documentation/getting-started.html`) Documentation
+          
 
